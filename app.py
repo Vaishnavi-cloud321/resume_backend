@@ -3,7 +3,7 @@ from google import genai
 from pydantic import BaseModel,Field
 app=FastAPI()
 
-client=genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+client=genai.Client(api_key="GEMINI_API_KEY")
 class resumerequest(BaseModel):
     skills:str=Field(min_length=10,max_length=80)
 
