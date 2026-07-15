@@ -2,4 +2,3 @@ fastapi
 pydantic
 google-genai
 uvicorn
-os
